@@ -21,6 +21,10 @@ def url_maeya(path="/"):
     return '<a href="%s%s">%s%s</a>' % (MAEYA, path, MAEYA, path)
 
 
+def url(u):
+    return '<a href="%s">%s</a>' % (u, u)
+
+
 def page(url, nav_title, title, description, h1, lede, blocks,
          parent=None, shops=None, rail=True, faq_schema=None):
     return {

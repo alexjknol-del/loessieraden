@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from base import page, milez, maeya, url_milez, url_maeya
+from base import page, milez, maeya, url_milez, url_maeya, url
 
 HOME = page(
     "/", "Home", "Loes Sieraden: sieraden combineren, maten en onderhoud",
@@ -23,12 +23,20 @@ HOME = page(
             ("/onderhoud/sieraden-bewaren/", "Sieraden bewaren", "Kettingen zonder knopen en ringen zonder krassen."),
             ("/cadeau/graveren/", "Graveren", "Binnen- of buitenkant van de sluiting, en welke tekst blijft kloppen."),
         ]),
-        ("h2", "Twee winkels die hier terugkomen"),
-        ("p", "In de artikelen wordt naar twee Nederlandse webshops verwezen, ieder met een eigen zwaartepunt."),
-        ("rows", [
-            ("https://milezbracelets.nl/", "Milez Bracelets", "Handgemaakte herenarmbanden van leer, natuursteen en combinaties daarvan, in maten voor smalle tot brede polsen, met graveerbare sluitingen. Te vinden op " + url_milez("/") + "."),
-            ("https://www.maeyajewelry.nl/", "Maeya Jewelry", "Waterproof sieraden van roestvrij staal en titanium piercings, met boutiques in Eindhoven en Tilburg. Te vinden op " + url_maeya("/") + "."),
-        ]),
+        ("h2", "Webshops die hier terugkomen"),
+        ("p", "Zes Nederlandse webshops komen op deze site langs, geordend naar het zwaartepunt van het assortiment en niet naar voorkeur."),
+        ("h3", "Handgemaakte armbanden"),
+        ("p", "Milez Bracelets maakt herenarmbanden van leer, natuursteen en combinaties daarvan, in maten voor smalle tot brede polsen, met graveerbare sluitingen. Te vinden op " + url_milez("/") + "."),
+        ("h3", "Waterproof staal en piercings"),
+        ("p", "Maeya Jewelry voert sieraden van roestvrij staal en titanium piercings, met boutiques in Eindhoven en Tilburg. Te vinden op " + url_maeya("/") + "."),
+        ("h3", "Breed assortiment met winkels door het land"),
+        ("p", "Lucardi is een juweliersketen met ruim honderd winkels en voert sieraden, horloges, piercings en graveerbare stukken. Te vinden op " + url("https://www.lucardi.nl/") + "."),
+        ("h3", "Zilver, goud en graveerwerk"),
+        ("p", "Zilver.nl verkoopt sinds 1991 zilveren en gouden sieraden, horloges en zilverwerk vanuit Broek in Waterland, met graveren als aparte dienst. Te vinden op " + url("https://www.zilver.nl/") + "."),
+        ("h3", "Eigen ontwerp uit Amsterdam"),
+        ("p", "ANNA + NINA ontwerpt sieraden in 14 karaats goud en in zilver, en heeft naast de webshop eigen winkels in Amsterdam en Utrecht. Te vinden op " + url("https://www.anna-nina.nl/") + "."),
+        ("h3", "Sieraden en horloges van bekende merken"),
+        ("p", "Brandfield voert sieraden en horloges van merken als Pandora, Fossil en Swarovski, naast tassen en accessoires. Te vinden op " + url("https://www.brandfield.nl/") + "."),
         ("h2", "Waar deze site over gaat"),
         ("p", "Loes Sieraden verzamelt praktische informatie over sieraden: hoe stukken zich tot elkaar verhouden, waar materialen wel en niet tegen kunnen, en welke maat waar op uitkomt. De pagina's staan los van elkaar en zijn te lezen zonder voorkennis."),
     ],
