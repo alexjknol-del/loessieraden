@@ -133,4 +133,24 @@ COOKIES = page(
     rail=False,
 )
 
-PAGES = [FAQ, CONTACT, PRIVACY, COOKIES]
+PARTNERS = {
+    "url": "/partners/",
+    "nav_title": "Partners",
+    "title": "Partners - Loes Sieraden",
+    "description": "Externe bronnen over materialen, onderhoud en bewust kopen waar Loes Sieraden naar verwijst.",
+    "h1": "Partners",
+    "lede": "Loes Sieraden verwijst hier naar externe bronnen over materialen, onderhoud en bewust kopen.",
+    "blocks": [
+        ("h2", "Consumentenbond"),
+        ("html", '<p>De Consumentenbond test producten en publiceert onafhankelijk koopadvies. <a href="https://www.consumentenbond.nl" target="_blank" rel="noopener">Consumentenbond</a></p>'),
+        ("h2", "Milieu Centraal"),
+        ("html", '<p>Milieu Centraal geeft onafhankelijke voorlichting over materialen, onderhoud en bewust kopen. <a href="https://www.milieucentraal.nl" target="_blank" rel="noopener">Milieu Centraal</a></p>'),
+    ],
+    "parent": None,
+    "shops": None,
+    "rail": False,
+    "faq_schema": None,
+}
+
+PAGES = [FAQ, CONTACT, PRIVACY, COOKIES, PARTNERS]
+

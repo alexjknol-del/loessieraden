@@ -56,6 +56,7 @@ for f in sorted(files):
         anchor_txt = re.sub(r"<[^>]+>", "", anchor).strip()
         if href.startswith("http"):
             ok = ("Milez" in anchor_txt or "Maeya" in anchor_txt
+                  or anchor_txt in ("Consumentenbond", "Milieu Centraal")
                   or anchor_txt.startswith("https://") or anchor_txt.startswith("http://"))
             if not ok:
                 problems.append("%s: ankertekst uitgaande link niet toegestaan: %r -> %s" % (f, anchor_txt, href))
